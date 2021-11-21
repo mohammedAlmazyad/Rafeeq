@@ -4,7 +4,7 @@
 
 
 ## Authors
-* **Mohammed Almazyad**: [GitHub](https://github.com/mohammadsm220) & [Linkedin](https://www.linkedin.com/in/mohammed-al-mazyad-768473186/).
+* **Mohammed Almazyad**: [GitHub](https://github.com/mohammedAlmazyad) & [Linkedin](https://www.linkedin.com/in/mohammed-al-mazyad-768473186/).
 * **Waleed Alasad**: [GitHub](https://github.com/Wa-lead) & [Linkedin](https://www.linkedin.com/in/waleed-alasad-b2a8331b5/).
 
 ## فكرة التطبيق | IDEA 
