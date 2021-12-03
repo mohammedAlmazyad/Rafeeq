@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "flutterweekend",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutterweekend (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },{
+            "name": "iphone",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "1EDF4A54-9780-4EDB-AB4D-3A0C4D1751CF"
+        },
+    ]
+}

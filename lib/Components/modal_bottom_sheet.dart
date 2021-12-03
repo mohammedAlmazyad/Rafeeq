@@ -3,7 +3,7 @@ import '../components/action_button.dart';
 import '../components/rounded_button.dart';
 import '../constants/app_colors.dart';
 
-modalBottomSheet(context, {required Widget child, required String title, bool locale = false}) {
+modalBottomSheet(context, {@required Widget child, @required String title, bool locale = false}) {
   showModalBottomSheet(
     isScrollControlled: true,
     elevation: 0,

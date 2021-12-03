@@ -3,10 +3,10 @@ import '../constants/app_colors.dart';
 
 class ActionButton extends StatelessWidget {
   final String title;
-  final Function? onTap;
-  final EdgeInsetsGeometry? margin;
+  final Function onTap;
+  final EdgeInsetsGeometry margin;
 
-  const ActionButton({required this.title, this.onTap, this.margin});
+  const ActionButton({@required this.title, this.onTap, this.margin});
 
   @override
   Widget build(BuildContext context) {

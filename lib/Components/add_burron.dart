@@ -5,7 +5,7 @@ import 'package:flutterweekend/constants/app_colors.dart';
 class AddButton extends StatelessWidget {
   final Function onTap;
 
-  const AddButton({required this.onTap});
+  const AddButton({@required this.onTap});
   @override
   Widget build(BuildContext context) {
     return Container(

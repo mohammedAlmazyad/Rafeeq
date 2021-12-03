@@ -8,7 +8,7 @@ class Bounce extends StatefulWidget {
   VoidCallback onTap;
   final Widget child;
   Duration duration;
-  Bounce({required this.child, required this.duration, required this.onTap}) : assert(child != null) {
+  Bounce({@required this.child, @required this.duration, @required this.onTap}) : assert(child != null) {
     if (duration == null) duration = Duration(milliseconds: 50);
   }
 
@@ -17,15 +17,15 @@ class Bounce extends StatefulWidget {
 }
 
 class BounceState extends State<Bounce> with SingleTickerProviderStateMixin {
-  late double _scale;
+  double _scale;
 
-  late AnimationController _animate;
+  AnimationController _animate;
 
   VoidCallback get onPressed => widget.onTap;
 
   Duration get userDuration => widget.duration;
 
-  late Duration onTapDownDuration;
+  Duration onTapDownDuration;
 
   @override
   void initState() {

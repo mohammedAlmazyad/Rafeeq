@@ -7,7 +7,7 @@ import '../main.dart';
 class TaskCard extends StatelessWidget {
   final Task task;
   const TaskCard({
-    required this.task,
+    @required this.task,
   });
   @override
   Widget build(BuildContext context) {

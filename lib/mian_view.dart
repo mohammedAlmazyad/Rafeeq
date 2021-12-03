@@ -10,7 +10,7 @@ import 'add_task_screen.dart';
 
 class MainView extends StatelessWidget {
   MainView({
-    Key? key,
+    Key key,
   }) : super(key: key);
   final db = FirestoreService();
 
@@ -68,13 +68,14 @@ class MainView extends StatelessWidget {
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
                     return ListView.builder(
-                      itemCount: snapshot.data!.length,
+                      itemCount: snapshot.data.length,
                       itemBuilder: (context, index) {
-                        return TaskCard(task: snapshot.data![index]);
+                        return TaskCard(task: snapshot.data[index]);
                       },
                     );
-                  } else
+                  } else {
                     return Container();
+                  }
                 }),
           ),
           Row(

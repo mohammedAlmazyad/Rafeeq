@@ -14,12 +14,12 @@ class FirestoreService {
   }
 
   Future<List<Task>> fetchtasks() async {
-    var doc =
-        await _db.collection('tasks').orderBy('timeAdded', descending: true).where('taskStatus', isEqualTo: 1).get();
+    var doc = await _db.collection('tasks').get();
     return doc.docs.map((snapshot) => Task.fromFirestore(snapshot.data())).toList();
   }
 
   Future<void> addTask(Task task) {
+    print('her');
     return _db.collection('Tasks').doc(task.taskId).set(task.toMap(), opations);
   }
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterweekend/constants/app_colors.dart';
 
 class AddIcon extends StatelessWidget {
-  const AddIcon({Key? key}) : super(key: key);
+  const AddIcon({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

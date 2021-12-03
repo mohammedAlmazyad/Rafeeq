@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutterweekend">
+    package="com.example.Rafeeq">
    <application
         android:label="flutterweekend"
         android:icon="@mipmap/ic_launcher">

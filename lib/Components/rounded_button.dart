@@ -2,21 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:flutterweekend/constants/app_colors.dart';
 
 class RoundedButton extends StatelessWidget {
-  final Color? buttonColor;
+  final Color buttonColor;
   final String title;
-  final double? titleSize;
-  final Color? titleColor;
-  final Color? borderColor;
-  final BorderRadius? borderRadius;
-  final EdgeInsetsGeometry? padding;
-  final double? height;
+  final double titleSize;
+  final Color titleColor;
+  final Color borderColor;
+  final BorderRadius borderRadius;
+  final EdgeInsetsGeometry padding;
+  final double height;
   final void Function() onTap;
 
   RoundedButton({
     this.buttonColor,
-    required this.title,
+    @required this.title,
     this.titleColor = Colors.white,
-    required this.onTap,
+    @required this.onTap,
     this.padding,
     this.titleSize,
     this.borderRadius,
@@ -36,7 +36,7 @@ class RoundedButton extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: borderRadius ?? kBorderRadiusSmall,
           color: borderColor == null ? buttonColor ?? kPrimaryColor : kTransparent,
-          border: borderColor != null ? Border.all(color: borderColor!, width: 2) : null,
+          border: borderColor != null ? Border.all(color: borderColor, width: 2) : null,
         ),
         child: Text(title,
             style:

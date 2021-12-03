@@ -11,14 +11,14 @@ class Task {
   final String userName;
 
   Task({
-    required this.taskName,
-    required this.taskStatus,
-    required this.timeAdded,
-    required this.userId,
-    required this.imageURL,
-    required this.taskDescription,
-    required this.userName,
-    required this.taskId,
+    @required this.taskName,
+    @required this.taskStatus,
+    @required this.timeAdded,
+    @required this.userId,
+    @required this.imageURL,
+    @required this.taskDescription,
+    @required this.userName,
+    @required this.taskId,
   });
 
   Map<String, dynamic> toMap() {

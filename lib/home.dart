@@ -5,7 +5,7 @@ import 'package:flutterweekend/mian_view.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 class Home extends StatefulWidget {
-  Home({Key? key}) : super(key: key);
+  Home({Key key}) : super(key: key);
 
   @override
   _HomeState createState() => _HomeState();
