@@ -41,7 +41,6 @@ class MainView extends StatelessWidget {
               // height: 40.0,
               width: 240.0,
               // ignore: use_full_hex_values_for_flutter_colors
-              // color: kPrimaryColor,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -62,22 +61,29 @@ class MainView extends StatelessWidget {
               // alignment:
             ),
           ),
-          Expanded(
-            child: FutureBuilder<List<Task>>(
-                future: db.fetchtasks(),
-                builder: (context, snapshot) {
-                  if (snapshot.hasData) {
-                    return ListView.builder(
-                      itemCount: snapshot.data.length,
-                      itemBuilder: (context, index) {
-                        return TaskCard(task: snapshot.data[index]);
-                      },
-                    );
-                  } else {
-                    return Container();
-                  }
-                }),
-          ),
+          FutureBuilder<List<Task>>(
+              future: db.fetchtasks(),
+              builder: (context, snapshot) {
+                if (snapshot.hasData && snapshot.data.isNotEmpty) {
+                  return ListView.builder(
+                    itemCount: snapshot.data.length,
+                    itemBuilder: (context, index) {
+                      return Expanded(child: TaskCard(task: snapshot.data[index]));
+                    },
+                  );
+                } else {
+                  return Expanded(
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      child: Text(
+                        'no items',
+                        style: TextStyle(color: Colors.black),
+                      ),
+                    ),
+                  );
+                }
+              }),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

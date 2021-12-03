@@ -21,7 +21,7 @@ dependencies:
 
   firebase_core: ^0.7.0
 
-  # image_picker: 
+  image_picker: 
 
 
 
